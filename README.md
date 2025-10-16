@@ -61,33 +61,23 @@ Welcome to the **LLM-Based Automations Course**! This quick tutorial will guide 
    pip install -r requirements.txt
    ```
 
-4. **Set up environment variables** (if needed)
-   ```bash
-   cp examples/llm-openai-api/.env_example .env
-   # Edit .env with your API keys
-   ```
 
-### Running the Examples
+### Running the Example
 
-Each example is self-contained and can be run independently:
+The example is self-contained and can be run independently:
 
 ```bash
-# For Jupyter notebook examples
+# Run the Jupyter notebook
 jupyter notebook examples/langgraph-hello-world/hello_world_agent.ipynb
-
-# For Python script examples
-python examples/example_name/script.py
 ```
 
 ---
 
-## 📖 Table of Contents
+## 📖 Example Overview
 
 | Example | Description | Difficulty | Duration |
 |---------|-------------|------------|----------|
 | **[LangGraph Hello World](./examples/langgraph-hello-world/)** | Introduction to LangGraph with a simple agent | 🟢 Beginner | 15 min |
-| **[Local LLM Integration](./examples/llm-local/)** | Working with local language models | 🟡 Intermediate | 30 min |
-| **[OpenAI API Integration](./examples/llm-openai-api/)** | Connecting to external LLM services | 🟡 Intermediate | 25 min |
 
 ### 📁 Example Details
 
@@ -96,16 +86,6 @@ python examples/example_name/script.py
 - **Description**: Your first steps with LangGraph! Learn how to create a simple agent that processes messages and maintains state.
 - **Key Concepts**: StateGraph, TypedDict, basic agent architecture
 - **Prerequisites**: None
-
-#### 🟡 [Local LLM Integration](./examples/llm-local/)
-- **Description**: Explore how to run language models locally on your machine for privacy and cost efficiency.
-- **Key Concepts**: Local model setup, resource management, offline processing
-- **Prerequisites**: Basic understanding of LangGraph
-
-#### 🟡 [OpenAI API Integration](./examples/llm-openai-api/)
-- **Description**: Learn to integrate with external LLM services like OpenAI's API for powerful cloud-based processing.
-- **Key Concepts**: API integration, authentication, error handling
-- **Prerequisites**: OpenAI API key, basic understanding of LangGraph
 
 ---
 
@@ -124,13 +104,10 @@ For a complete list of dependencies, see [requirements.txt](./requirements.txt).
 
 ## 📚 Learning Path
 
-We recommend following the examples in this order:
+We recommend starting with the LangGraph Hello World example:
 
-1. **Start Here**: [LangGraph Hello World](./examples/langgraph-hello-world/) - Get familiar with the basics
-2. **Choose Your Path**: 
-   - [Local LLM](./examples/llm-local/) - If you prefer privacy and offline processing
-   - [OpenAI API](./examples/llm-openai-api/) - If you want powerful cloud-based models
-3. **Experiment**: Modify the examples, add your own features, and build something unique!
+1. **Start Here**: [LangGraph Hello World](./examples/langgraph-hello-world/) - Get familiar with the basics of LangGraph
+2. **Experiment**: Modify the example, add your own features, and build something unique!
 
 ---
 
