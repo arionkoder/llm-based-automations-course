@@ -67,8 +67,9 @@ Welcome to the **LLM-Based Automations Course**! This quick tutorial will guide 
 The example is self-contained and can be run independently:
 
 ```bash
-# Run the Jupyter notebook
-jupyter notebook examples/langgraph-hello-world/hello_world_agent.ipynb
+# Run the Jupyter notebooks
+jupyter notebook examples/langgraph-basics/hello_world_agent.ipynb
+jupyter notebook examples/langgraph-basics/sequential_graph.ipynb
 ```
 
 ---
@@ -77,15 +78,23 @@ jupyter notebook examples/langgraph-hello-world/hello_world_agent.ipynb
 
 | Example | Description | Difficulty | Duration |
 |---------|-------------|------------|----------|
-| **[LangGraph Hello World](./examples/langgraph-hello-world/)** | Introduction to LangGraph with a simple agent | 🟢 Beginner | 15 min |
+| **[LangGraph Basics](./examples/langgraph-basics/)** | Introduction to LangGraph with foundational examples | 🟢 Beginner | 30 min |
 
 ### 📁 Example Details
 
-#### 🟢 [LangGraph Hello World](./examples/langgraph-hello-world/)
+#### 🟢 [LangGraph Basics](./examples/langgraph-basics/)
+
+**Example 1: Hello World Agent**
 - **File**: `hello_world_agent.ipynb`
 - **Description**: Your first steps with LangGraph! Learn how to create a simple agent that processes messages and maintains state.
 - **Key Concepts**: StateGraph, TypedDict, basic agent architecture
 - **Prerequisites**: None
+
+**Example 2: Sequential Graph**
+- **File**: `sequential_graph.ipynb`
+- **Description**: Learn how to build sequential pipelines with multiple connected nodes that process data step-by-step.
+- **Key Concepts**: Sequential workflows, state management, explicit edges, streaming execution
+- **Prerequisites**: Hello World Agent example
 
 ---
 
@@ -104,10 +113,11 @@ For a complete list of dependencies, see [requirements.txt](./requirements.txt).
 
 ## 📚 Learning Path
 
-We recommend starting with the LangGraph Hello World example:
+We recommend following this learning path:
 
-1. **Start Here**: [LangGraph Hello World](./examples/langgraph-hello-world/) - Get familiar with the basics of LangGraph
-2. **Experiment**: Modify the example, add your own features, and build something unique!
+1. **Start Here**: [LangGraph Basics - Hello World](./examples/langgraph-basics/hello_world_agent.ipynb) - Get familiar with the basics of LangGraph
+2. **Next Step**: [LangGraph Basics - Sequential Graph](./examples/langgraph-basics/sequential_graph.ipynb) - Learn about sequential workflows and state management
+3. **Experiment**: Modify the examples, add your own features, and build something unique!
 
 ---
 
