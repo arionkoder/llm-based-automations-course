@@ -70,6 +70,7 @@ The example is self-contained and can be run independently:
 # Run the Jupyter notebooks
 jupyter notebook examples/langgraph-basics/hello_world_agent.ipynb
 jupyter notebook examples/langgraph-basics/sequential_graph.ipynb
+jupyter notebook examples/langgraph-basics/conditional_graph.ipynb
 ```
 
 ---
@@ -96,6 +97,12 @@ jupyter notebook examples/langgraph-basics/sequential_graph.ipynb
 - **Key Concepts**: Sequential workflows, state management, explicit edges, streaming execution
 - **Prerequisites**: Hello World Agent example
 
+**Example 3: Conditional Graph**
+- **File**: `conditional_graph.ipynb`
+- **Description**: Discover how to create conditional branching logic in LangGraph with decision-making nodes that route execution based on state conditions.
+- **Key Concepts**: Conditional edges, routing logic, branching workflows, decision nodes, business logic modeling
+- **Prerequisites**: Sequential Graph example
+
 ---
 
 ## 🛠️ Dependencies
@@ -117,7 +124,8 @@ We recommend following this learning path:
 
 1. **Start Here**: [LangGraph Basics - Hello World](./examples/langgraph-basics/hello_world_agent.ipynb) - Get familiar with the basics of LangGraph
 2. **Next Step**: [LangGraph Basics - Sequential Graph](./examples/langgraph-basics/sequential_graph.ipynb) - Learn about sequential workflows and state management
-3. **Experiment**: Modify the examples, add your own features, and build something unique!
+3. **Advanced**: [LangGraph Basics - Conditional Graph](./examples/langgraph-basics/conditional_graph.ipynb) - Master conditional branching and decision-making logic
+4. **Experiment**: Modify the examples, add your own features, and build something unique!
 
 ---
 
