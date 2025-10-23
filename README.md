@@ -62,15 +62,22 @@ Welcome to the **LLM-Based Automations Course**! This quick tutorial will guide 
    ```
 
 
-### Running the Example
+### Running the Examples
 
-The example is self-contained and can be run independently:
+The examples are self-contained and can be run independently:
 
 ```bash
-# Run the Jupyter notebooks
+# Run the LangGraph basics notebooks
 jupyter notebook examples/langgraph-basics/hello_world_agent.ipynb
 jupyter notebook examples/langgraph-basics/sequential_graph.ipynb
 jupyter notebook examples/langgraph-basics/conditional_graph.ipynb
+jupyter notebook examples/langgraph-basics/looping_graph.ipynb
+
+# Run the LLM OpenAI API notebook
+jupyter notebook examples/llm-openai-api/basic_bot_no_memory.ipynb
+
+# Run the LLM Local notebook (requires Ollama setup)
+jupyter notebook examples/llm-local/basic_bot_no_memory.ipynb
 ```
 
 ---
@@ -79,7 +86,9 @@ jupyter notebook examples/langgraph-basics/conditional_graph.ipynb
 
 | Example | Description | Difficulty | Duration |
 |---------|-------------|------------|----------|
-| **[LangGraph Basics](./examples/langgraph-basics/)** | Introduction to LangGraph with foundational examples | 🟢 Beginner | 30 min |
+| **[LangGraph Basics](./examples/langgraph-basics/)** | Introduction to LangGraph with foundational examples | 🟢 Beginner | 45 min |
+| **[LLM OpenAI API](./examples/llm-openai-api/)** | Integration with OpenAI's language models | 🟡 Intermediate | 30 min |
+| **[LLM Local](./examples/llm-local/)** | Running local language models with Ollama | 🟡 Intermediate | 30 min |
 
 ### 📁 Example Details
 
@@ -103,6 +112,28 @@ jupyter notebook examples/langgraph-basics/conditional_graph.ipynb
 - **Key Concepts**: Conditional edges, routing logic, branching workflows, decision nodes, business logic modeling
 - **Prerequisites**: Sequential Graph example
 
+**Example 4: Looping Graph**
+- **File**: `looping_graph.ipynb`
+- **Description**: Learn how to implement loops in LangGraph, allowing nodes to repeat until specific conditions are met. Perfect for iterative processes and retry mechanisms.
+- **Key Concepts**: Looping edges, iterative workflows, conditional loops, retry patterns, state persistence across iterations
+- **Prerequisites**: Conditional Graph example
+
+#### 🟡 [LLM OpenAI API](./examples/llm-openai-api/)
+
+**Example 1: Basic Bot (No Memory)**
+- **File**: `basic_bot_no_memory.ipynb`
+- **Description**: Your first real AI agent! Learn how to integrate OpenAI's language models with LangGraph to create a conversational agent.
+- **Key Concepts**: LLM integration, OpenAI API, ChatOpenAI, message handling, environment setup, API key management
+- **Prerequisites**: LangGraph Basics examples
+
+#### 🟡 [LLM Local](./examples/llm-local/)
+
+**Example 1: Basic Bot (No Memory) - Local**
+- **File**: `basic_bot_no_memory.ipynb`
+- **Description**: Run AI agents locally! Learn how to integrate local language models using Ollama with LangGraph to create a conversational agent that runs on your own hardware.
+- **Key Concepts**: Local LLM integration, Ollama setup, ChatOpenAI with local endpoints, GPU utilization, cost reduction, offline AI capabilities
+- **Prerequisites**: LangGraph Basics examples, Ollama installation
+
 ---
 
 ## 🛠️ Dependencies
@@ -125,7 +156,10 @@ We recommend following this learning path:
 1. **Start Here**: [LangGraph Basics - Hello World](./examples/langgraph-basics/hello_world_agent.ipynb) - Get familiar with the basics of LangGraph
 2. **Next Step**: [LangGraph Basics - Sequential Graph](./examples/langgraph-basics/sequential_graph.ipynb) - Learn about sequential workflows and state management
 3. **Advanced**: [LangGraph Basics - Conditional Graph](./examples/langgraph-basics/conditional_graph.ipynb) - Master conditional branching and decision-making logic
-4. **Experiment**: Modify the examples, add your own features, and build something unique!
+4. **Loops**: [LangGraph Basics - Looping Graph](./examples/langgraph-basics/looping_graph.ipynb) - Understand iterative processes and retry mechanisms
+5. **AI Integration**: [LLM OpenAI API - Basic Bot](./examples/llm-openai-api/basic_bot_no_memory.ipynb) - Create your first AI-powered agent with OpenAI
+6. **Local AI**: [LLM Local - Basic Bot](./examples/llm-local/basic_bot_no_memory.ipynb) - Run AI agents locally with Ollama
+7. **Experiment**: Modify the examples, add your own features, and build something unique!
 
 ---
 
