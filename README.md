@@ -78,6 +78,9 @@ jupyter notebook examples/llm-openai-api/basic_bot_no_memory.ipynb
 
 # Run the LLM Local notebook (requires Ollama setup)
 jupyter notebook examples/llm-local/basic_bot_no_memory.ipynb
+
+# Run the LLM-Based Workflows notebook (requires OpenAI API key)
+jupyter notebook examples/llm-based-workflows/invoice_processor.ipynb
 ```
 
 ---
@@ -89,6 +92,7 @@ jupyter notebook examples/llm-local/basic_bot_no_memory.ipynb
 | **[LangGraph Basics](./examples/langgraph-basics/)** | Introduction to LangGraph with foundational examples | 🟢 Beginner | 45 min |
 | **[LLM OpenAI API](./examples/llm-openai-api/)** | Integration with OpenAI's language models | 🟡 Intermediate | 30 min |
 | **[LLM Local](./examples/llm-local/)** | Running local language models with Ollama | 🟡 Intermediate | 30 min |
+| **[LLM-Based Workflows](./examples/llm-based-workflows/)** | Real-world document processing with LangGraph and LLMs | 🔴 Advanced | 60 min |
 
 ### 📁 Example Details
 
@@ -134,6 +138,15 @@ jupyter notebook examples/llm-local/basic_bot_no_memory.ipynb
 - **Key Concepts**: Local LLM integration, Ollama setup, ChatOpenAI with local endpoints, GPU utilization, cost reduction, offline AI capabilities
 - **Prerequisites**: LangGraph Basics examples, Ollama installation
 
+#### 🔴 [LLM-Based Workflows](./examples/llm-based-workflows/)
+
+**Example 1: Invoice Processing Pipeline**
+- **File**: `invoice_processor.ipynb`
+- **Description**: Build a complete document processing workflow! Learn how to create an automated system that extracts data from PDF invoices using LLMs and LangGraph orchestration. This real-world example demonstrates advanced workflow patterns for business automation.
+- **Key Concepts**: PDF text extraction, LLM-based data parsing, structured data extraction, Pydantic models, batch processing, document automation, business workflow orchestration
+- **Prerequisites**: LangGraph Basics examples, OpenAI API key, PDF processing libraries
+- **Sample Data**: Includes 10 sample PDF invoices and CSV output format
+
 ---
 
 ## 🛠️ Dependencies
@@ -141,8 +154,11 @@ jupyter notebook examples/llm-local/basic_bot_no_memory.ipynb
 This course uses the following main libraries:
 
 - **LangGraph** (0.6.10): Core framework for building LLM applications
-- **LangChain Core** (0.3.79): Essential components for LLM workflows
+- **LangChain Core** (1.0.0): Essential components for LLM workflows
+- **LangChain OpenAI** (1.0.0): OpenAI integration for LangChain
 - **Pydantic** (2.12.2): Data validation and settings management
+- **PDF Plumber** (0.11.7): PDF text extraction and processing
+- **Python-dotenv** (1.1.1): Environment variable management
 - **Jupyter**: Interactive notebook environment
 
 For a complete list of dependencies, see [requirements.txt](./requirements.txt).
@@ -159,7 +175,8 @@ We recommend following this learning path:
 4. **Loops**: [LangGraph Basics - Looping Graph](./examples/langgraph-basics/looping_graph.ipynb) - Understand iterative processes and retry mechanisms
 5. **AI Integration**: [LLM OpenAI API - Basic Bot](./examples/llm-openai-api/basic_bot_no_memory.ipynb) - Create your first AI-powered agent with OpenAI
 6. **Local AI**: [LLM Local - Basic Bot](./examples/llm-local/basic_bot_no_memory.ipynb) - Run AI agents locally with Ollama
-7. **Experiment**: Modify the examples, add your own features, and build something unique!
+7. **Real-World Application**: [LLM-Based Workflows - Invoice Processing](./examples/llm-based-workflows/invoice_processor.ipynb) - Build a complete document processing pipeline
+8. **Experiment**: Modify the examples, add your own features, and build something unique!
 
 ---
 

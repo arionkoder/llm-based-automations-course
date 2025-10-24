@@ -1,6 +1,9 @@
 # ignore vscode
 .vscode/
 
+# ignore cursor rules
+.cursor
+
 # .env files
 *.env
 
