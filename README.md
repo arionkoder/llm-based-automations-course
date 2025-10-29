@@ -79,8 +79,9 @@ jupyter notebook examples/llm-openai-api/basic_bot_no_memory.ipynb
 # Run the LLM Local notebook (requires Ollama setup)
 jupyter notebook examples/llm-local/basic_bot_no_memory.ipynb
 
-# Run the LLM-Based Workflows notebook (requires OpenAI API key)
+# Run the LLM-Based Workflows notebooks (requires OpenAI API key)
 jupyter notebook examples/llm-based-workflows/invoice_processor.ipynb
+jupyter notebook examples/llm-based-workflows/invoice_processor_and_notification.ipynb
 ```
 
 ---
@@ -147,6 +148,13 @@ jupyter notebook examples/llm-based-workflows/invoice_processor.ipynb
 - **Prerequisites**: LangGraph Basics examples, OpenAI API key, PDF processing libraries
 - **Sample Data**: Includes 10 sample PDF invoices and CSV output format
 
+**Example 2: Invoice Processing with Conditional Notifications**
+- **File**: `invoice_processor_and_notification.ipynb`
+- **Description**: Extend the invoice processing workflow with conditional edges! Learn how to create intelligent routing logic that handles high-value invoices differently, generating email notifications and requiring CFO approval for invoices above $200,000. This enhanced example demonstrates how LangGraph's conditional workflows can enforce business rules and automate complex decision-making.
+- **Key Concepts**: Conditional edges, conditional routing, business rule enforcement, email notification generation, high-value invoice handling, branching workflows, LLM-powered business communications
+- **Prerequisites**: Invoice Processing Pipeline example (Example 1), OpenAI API key, PDF processing libraries
+- **Sample Data**: Includes 10 sample PDF invoices, CSV output format, and notification data
+
 ---
 
 ## 🛠️ Dependencies
@@ -176,7 +184,8 @@ We recommend following this learning path:
 5. **AI Integration**: [LLM OpenAI API - Basic Bot](./examples/llm-openai-api/basic_bot_no_memory.ipynb) - Create your first AI-powered agent with OpenAI
 6. **Local AI**: [LLM Local - Basic Bot](./examples/llm-local/basic_bot_no_memory.ipynb) - Run AI agents locally with Ollama
 7. **Real-World Application**: [LLM-Based Workflows - Invoice Processing](./examples/llm-based-workflows/invoice_processor.ipynb) - Build a complete document processing pipeline
-8. **Experiment**: Modify the examples, add your own features, and build something unique!
+8. **Advanced Workflows**: [LLM-Based Workflows - Conditional Notifications](./examples/llm-based-workflows/invoice_processor_and_notification.ipynb) - Master conditional routing and business rule enforcement
+9. **Experiment**: Modify the examples, add your own features, and build something unique!
 
 ---
 
