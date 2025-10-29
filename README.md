@@ -6,7 +6,7 @@
   **Building Intelligent Automations with LangGraph and Large Language Models**
   
   [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
-  [![LangGraph](https://img.shields.io/badge/LangGraph-0.6.10-green.svg)](https://langchain-ai.github.io/langgraph/)
+  [![LangGraph](https://img.shields.io/badge/LangGraph-1.0.1-green.svg)](https://langchain-ai.github.io/langgraph/)
   [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 </div>
 
@@ -23,6 +23,7 @@ Welcome to the **LLM-Based Automations Course**! This quick tutorial will guide 
 - 🛠️ **Local LLM Integration**: Working with local language models
 - 🌐 **API Integration**: Connecting to external LLM services
 - 📊 **State Management**: Handling state transitions in your automations
+- 🔍 **RAG Systems**: Building Retrieval-Augmented Generation applications with vector databases
 
 ---
 
@@ -82,6 +83,9 @@ jupyter notebook examples/llm-local/basic_bot_no_memory.ipynb
 # Run the LLM-Based Workflows notebooks (requires OpenAI API key)
 jupyter notebook examples/llm-based-workflows/invoice_processor.ipynb
 jupyter notebook examples/llm-based-workflows/invoice_processor_and_notification.ipynb
+
+# Run the LLM Agents notebook (requires OpenAI API key)
+jupyter notebook examples/llm-agents/agentic-rag-product-support.ipynb
 ```
 
 ---
@@ -94,6 +98,7 @@ jupyter notebook examples/llm-based-workflows/invoice_processor_and_notification
 | **[LLM OpenAI API](./examples/llm-openai-api/)** | Integration with OpenAI's language models | 🟡 Intermediate | 30 min |
 | **[LLM Local](./examples/llm-local/)** | Running local language models with Ollama | 🟡 Intermediate | 30 min |
 | **[LLM-Based Workflows](./examples/llm-based-workflows/)** | Real-world document processing with LangGraph and LLMs | 🔴 Advanced | 60 min |
+| **[LLM Agents](./examples/llm-agents/)** | Agentic RAG applications with vector search and semantic retrieval | 🔴 Advanced | 90 min |
 
 ### 📁 Example Details
 
@@ -155,15 +160,28 @@ jupyter notebook examples/llm-based-workflows/invoice_processor_and_notification
 - **Prerequisites**: Invoice Processing Pipeline example (Example 1), OpenAI API key, PDF processing libraries
 - **Sample Data**: Includes 10 sample PDF invoices, CSV output format, and notification data
 
+#### 🔴 [LLM Agents](./examples/llm-agents/)
+
+**Example 1: Agentic RAG for Product Support**
+- **File**: `agentic-rag-product-support.ipynb`
+- **Description**: Build a complete Retrieval-Augmented Generation (RAG) application! Learn how to create an intelligent question-answering system that processes technical documentation (Tesla vehicle manual), builds a vector database for semantic search, and uses LangGraph to orchestrate retrieval and answer generation workflows. This advanced example demonstrates how to combine document processing, embeddings, vector search, and LLM capabilities to create production-ready RAG systems.
+- **Key Concepts**: RAG architecture, vector databases (FAISS), embeddings (OpenAI), semantic search, document chunking, retrieval-augmented generation, technical documentation Q&A, vector similarity search, context preparation, multi-step agent workflows
+- **Prerequisites**: LangGraph Basics examples, OpenAI API key, PDF processing libraries, vector database knowledge
+- **Sample Data**: Includes Tesla vehicle manual PDF and pre-built vector database files
+
 ---
 
 ## 🛠️ Dependencies
 
 This course uses the following main libraries:
 
-- **LangGraph** (0.6.10): Core framework for building LLM applications
+- **LangGraph** (1.0.1): Core framework for building LLM applications
+- **LangChain** (1.0.2): Full-featured LangChain library for LLM workflows
 - **LangChain Core** (1.0.0): Essential components for LLM workflows
 - **LangChain OpenAI** (1.0.0): OpenAI integration for LangChain
+- **LangChain Text Splitters** (1.0.0): Text chunking utilities for RAG applications
+- **FAISS-CPU** (1.12.0): Vector database for similarity search and retrieval
+- **NumPy** (2.2.6): Numerical operations for vector calculations
 - **Pydantic** (2.12.2): Data validation and settings management
 - **PDF Plumber** (0.11.7): PDF text extraction and processing
 - **Python-dotenv** (1.1.1): Environment variable management
@@ -185,7 +203,8 @@ We recommend following this learning path:
 6. **Local AI**: [LLM Local - Basic Bot](./examples/llm-local/basic_bot_no_memory.ipynb) - Run AI agents locally with Ollama
 7. **Real-World Application**: [LLM-Based Workflows - Invoice Processing](./examples/llm-based-workflows/invoice_processor.ipynb) - Build a complete document processing pipeline
 8. **Advanced Workflows**: [LLM-Based Workflows - Conditional Notifications](./examples/llm-based-workflows/invoice_processor_and_notification.ipynb) - Master conditional routing and business rule enforcement
-9. **Experiment**: Modify the examples, add your own features, and build something unique!
+9. **RAG Systems**: [LLM Agents - Agentic RAG](./examples/llm-agents/agentic-rag-product-support.ipynb) - Build intelligent question-answering systems with vector databases and semantic search
+10. **Experiment**: Modify the examples, add your own features, and build something unique!
 
 ---
 
