@@ -1,0 +1,54 @@
+invoice_number,invoice_date,supplier_name,supplier_address,supplier_vat,customer_name,customer_address,currency,subtotal,tax,total,line_items_json,requires_approval,notification_subject,notification_body
+86864,2025-29-03,Polychemtex Inc.,"1 Main Street, Townsville, DH9 OTB",GB999 9999 73,ACME Inc,"44 Shore St, Macduff, AB4 1TX",GBP,1072.83,214.57,1287.4,"[{'description': 'Catalyst 1 liter', 'quantity': 10.0, 'unit_price': 59.99, 'total': 500.0}, {'description': 'Resin', 'quantity': 10.0, 'unit_price': 59.99, 'total': 500.0}, {'description': 'Deionized water', 'quantity': 5.0, 'unit_price': 1.99, 'total': 9.95}, {'description': 'Potassium Hydroxide', 'quantity': 1.0, 'unit_price': 17.99, 'total': 17.99}, {'description': 'EDTA', 'quantity': 10.0, 'unit_price': 1.49, 'total': 14.9}, {'description': 'Polymer', 'quantity': 1.0, 'unit_price': 29.99, 'total': 29.99}]",False,,
+86864,2025-29-03,Polychemtex Inc.,"1 Main Street, Townsville, DH9 OTB",GB999 9999 73,ACME Inc,"44 Shore St, Macduff, AB4 1TX",USD,1072.83,214.57,1287.4,"[{'description': 'Catalyst 1 liter', 'quantity': 10.0, 'unit_price': 59.99, 'total': 500.0}, {'description': 'Resin', 'quantity': 10.0, 'unit_price': 59.99, 'total': 500.0}, {'description': 'Deionized water', 'quantity': 5.0, 'unit_price': 1.99, 'total': 9.95}, {'description': 'Potassium Hydroxide', 'quantity': 1.0, 'unit_price': 17.99, 'total': 17.99}, {'description': 'EDTA', 'quantity': 10.0, 'unit_price': 1.49, 'total': 14.9}, {'description': 'Polymer', 'quantity': 1.0, 'unit_price': 29.99, 'total': 29.99}]",False,,
+347003,2025-29-03,Contoso Asia,"123 Xia Street
+Beijing
+100027",CN213 4444 66,ACME Inc,"44 Shore St
+Macduff
+AB4 1TX",USD,481059.99,96212.0,577271.99,"[{'description': 'SpeakerCable Speaker cable 10', 'quantity': 650.0, 'unit_price': 300.0, 'total': 195000.0}, {'description': 'SurroundSoundReceive', 'quantity': 450.0, 'unit_price': 320.0, 'total': 144000.0}, {'description': 'TelevisionM12037 Television M120 37 Silver', 'quantity': 625.0, 'unit_price': 160.0, 'total': 100000.0}, {'description': 'Soundbar', 'quantity': 350.0, 'unit_price': 120.0, 'total': 42000.0}, {'description': '0.1 Cable', 'quantity': 1.0, 'unit_price': 59.99, 'total': 59.99}]",True,"Action required: CFO approval needed — Invoice 347003 (USD 577,271.99) from Contoso Asia","Dear Finance Team,
+
+Purpose: This is to notify you of a high-value supplier invoice that requires CFO approval prior to payment.
+
+Key invoice details:
+- Supplier: Contoso Asia
+- Invoice Number: 347003
+- Invoice Date: 29 Mar 2025
+- Total Amount: USD 577,271.99
+- Supplier VAT: CN213 4444 66
+- Supplier Address: 123 Xia Street, Beijing, 100027
+
+Why approval is required:
+- In accordance with our approval policy, invoices exceeding USD 200,000 require CFO approval. This invoice totals USD 577,271.99 and therefore must be approved by the CFO before payment can be scheduled.
+
+Next steps:
+1) AP to confirm coding, supporting documentation, and matching (if applicable).
+2) Route the invoice to the CFO via the AP approval workflow for electronic sign-off.
+3) CFO to review and approve or return with comments.
+4) Upon approval, AP will release the invoice for the next available payment run.
+
+Payment will remain on hold until CFO approval is received. Please advise if any additional documentation is required.
+
+Best regards,
+Accounts Payable"
+347003,2025-29-03,Contoso Asia,"123 Xia Street, Beijing, 100027",CN213 4444 66,ACME Inc,"44 Shore St, Macduff, AB4 1TX",USD,481059.99,96212.0,577271.99,"[{'description': '12345 SpeakerCable Speaker cable 10', 'quantity': 650.0, 'unit_price': 300.0, 'total': 195000.0}, {'description': '55551 SurroundSoundReceive', 'quantity': 450.0, 'unit_price': 320.0, 'total': 144000.0}, {'description': '12333 TelevisionM12037 Television M120 37 Silver', 'quantity': 625.0, 'unit_price': 160.0, 'total': 100000.0}, {'description': '22333 Soundbar', 'quantity': 350.0, 'unit_price': 120.0, 'total': 42000.0}, {'description': '17111 0.1 Cable', 'quantity': 1.0, 'unit_price': 59.99, 'total': 59.99}]",True,"CFO Approval Required: High-Value Invoice 347003 – Contoso Asia (USD 577,271.99)","Dear CFO and AP Team,
+
+Purpose: This is a high-value invoice notification requiring CFO approval prior to payment.
+
+Key invoice details:
+- Supplier: Contoso Asia (VAT: CN213 4444 66)
+- Supplier Address: 123 Xia Street, Beijing, 100027
+- Invoice Number: 347003
+- Invoice Date: 29 Mar 2025
+- Total Amount: USD 577,271.99
+
+Reason for approval: The invoice total exceeds our $200,000 authorization threshold; therefore, CFO approval is required before the invoice can be scheduled for payment in accordance with our payment authorization policy.
+
+Next steps:
+1) Please review the attached invoice and supporting documentation.
+2) Provide approval by either:
+   - Approving in the AP approval workflow, or
+   - Replying to this email with written approval from your company email account.
+3) Upon receipt of approval, AP will queue the invoice for the next available payment run. If there are any discrepancies or additional information required, please notify the AP team.
+
+Thank you,
+Accounts Payable"
