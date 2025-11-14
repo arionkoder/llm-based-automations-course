@@ -14,22 +14,22 @@
 
 ## 📚 About This Course
 
-Welcome to the **LLM-Based Automations Course**! This quick tutorial will guide you through building automations for different types of business challenges using Large Language Models (LLMs) and LangGraph.
+Welcome to the **LLM-Based Automations Course**! This tutorial will guide you through building automations for different types of business challenges using Large Language Models (LLMs) and LangGraph.
 
 ### What You'll Learn
 
 - 🎯 **LangGraph Fundamentals**: Understanding state graphs, nodes, and workflows
-- 🔄 **Agent Architecture**: Building intelligent agents that can reason and act
-- 🛠️ **Local LLM Integration**: Working with local language models
-- 🌐 **API Integration**: Connecting to external LLM services
 - 📊 **State Management**: Handling state transitions in your automations
+- 🌐 **API Integration**: Connecting to external LLM services
+- 🛠️ **Local LLM Integration**: Working with local language models
 - 🔍 **RAG Systems**: Building Retrieval-Augmented Generation applications with vector databases
+- 🔄 **Agent Architecture**: Building intelligent agents that can reason and act
 
 ---
 
 ## 👥 Authors
 
-* [José Ignacio Orlando, PhD](https://www.linkedin.com/in/jos%C3%A9-ignacio-orlando-560b8040/?originalSubdomain=ar) - Director of R&D at Arionkoder, Associate Researcher at CONICET
+* [José Ignacio Orlando, PhD](https://www.linkedin.com/in/jos%C3%A9-ignacio-orlando-560b8040/?originalSubdomain=ar) - AI R&D Director at Arionkoder, Associate Researcher at CONICET
 * [Damián Calderón](https://www.linkedin.com/in/damiancalderon/) - AI Product Manager at Arionkoder
 
 
@@ -69,23 +69,24 @@ The examples are self-contained and can be run independently:
 
 ```bash
 # Run the LangGraph basics notebooks
-jupyter notebook examples/langgraph-basics/hello_world_agent.ipynb
-jupyter notebook examples/langgraph-basics/sequential_graph.ipynb
-jupyter notebook examples/langgraph-basics/conditional_graph.ipynb
-jupyter notebook examples/langgraph-basics/looping_graph.ipynb
+jupyter notebook examples/01-langgraph-basics/01-hello_world_agent.ipynb
+jupyter notebook examples/01-langgraph-basics/02-sequential_graph.ipynb
+jupyter notebook examples/01-langgraph-basics/03-conditional_graph.ipynb
+jupyter notebook examples/01-langgraph-basics/04-looping_graph.ipynb
 
 # Run the LLM OpenAI API notebook
-jupyter notebook examples/llm-openai-api/basic_bot_no_memory.ipynb
+jupyter notebook examples/02-llm-openai-api/01-basic_bot_no_memory.ipynb
 
 # Run the LLM Local notebook (requires Ollama setup)
-jupyter notebook examples/llm-local/basic_bot_no_memory.ipynb
+jupyter notebook examples/03-llm-local/01-basic_bot_no_memory.ipynb
 
 # Run the LLM-Based Workflows notebooks (requires OpenAI API key)
-jupyter notebook examples/llm-based-workflows/invoice_processor.ipynb
-jupyter notebook examples/llm-based-workflows/invoice_processor_and_notification.ipynb
+jupyter notebook examples/04-llm-based-workflows/01-invoice_processor.ipynb
+jupyter notebook examples/04-llm-based-workflows/02-invoice_processor_and_notification.ipynb
 
-# Run the LLM Agents notebook (requires OpenAI API key)
-jupyter notebook examples/llm-agents/agentic-rag-product-support.ipynb
+# Run the LLM Agents notebooks (requires OpenAI API key)
+jupyter notebook examples/05-llm-agents/01-rag-product-support.ipynb
+jupyter notebook examples/05-llm-agents/02-agentic-rag-product-support.ipynb
 ```
 
 ---
@@ -94,80 +95,87 @@ jupyter notebook examples/llm-agents/agentic-rag-product-support.ipynb
 
 | Example | Description | Difficulty | Duration |
 |---------|-------------|------------|----------|
-| **[LangGraph Basics](./examples/langgraph-basics/)** | Introduction to LangGraph with foundational examples | 🟢 Beginner | 45 min |
-| **[LLM OpenAI API](./examples/llm-openai-api/)** | Integration with OpenAI's language models | 🟡 Intermediate | 30 min |
-| **[LLM Local](./examples/llm-local/)** | Running local language models with Ollama | 🟡 Intermediate | 30 min |
-| **[LLM-Based Workflows](./examples/llm-based-workflows/)** | Real-world document processing with LangGraph and LLMs | 🔴 Advanced | 60 min |
-| **[LLM Agents](./examples/llm-agents/)** | Agentic RAG applications with vector search and semantic retrieval | 🔴 Advanced | 90 min |
+| **[LangGraph Basics](./examples/01-langgraph-basics/)** | Introduction to LangGraph with foundational examples | 🟢 Beginner | 45 min |
+| **[LLM OpenAI API](./examples/02-llm-openai-api/)** | Integration with OpenAI's language models | 🟡 Intermediate | 30 min |
+| **[LLM Local](./examples/03-llm-local/)** | Running local language models with Ollama | 🟡 Intermediate | 30 min |
+| **[LLM-Based Workflows](./examples/04-llm-based-workflows/)** | Real-world document processing with LangGraph and LLMs | 🔴 Advanced | 60 min |
+| **[LLM Agents](./examples/05-llm-agents/)** | Agentic RAG applications with vector search and semantic retrieval | 🔴 Advanced | 90 min |
 
 ### 📁 Example Details
 
-#### 🟢 [LangGraph Basics](./examples/langgraph-basics/)
+#### 🟢 [LangGraph Basics](./examples/01-langgraph-basics/)
 
 **Example 1: Hello World Agent**
-- **File**: `hello_world_agent.ipynb`
+- **File**: `01-hello_world_agent.ipynb`
 - **Description**: Your first steps with LangGraph! Learn how to create a simple agent that processes messages and maintains state.
 - **Key Concepts**: StateGraph, TypedDict, basic agent architecture
 - **Prerequisites**: None
 
 **Example 2: Sequential Graph**
-- **File**: `sequential_graph.ipynb`
+- **File**: `02-sequential_graph.ipynb`
 - **Description**: Learn how to build sequential pipelines with multiple connected nodes that process data step-by-step.
 - **Key Concepts**: Sequential workflows, state management, explicit edges, streaming execution
 - **Prerequisites**: Hello World Agent example
 
 **Example 3: Conditional Graph**
-- **File**: `conditional_graph.ipynb`
+- **File**: `03-conditional_graph.ipynb`
 - **Description**: Discover how to create conditional branching logic in LangGraph with decision-making nodes that route execution based on state conditions.
 - **Key Concepts**: Conditional edges, routing logic, branching workflows, decision nodes, business logic modeling
 - **Prerequisites**: Sequential Graph example
 
 **Example 4: Looping Graph**
-- **File**: `looping_graph.ipynb`
+- **File**: `04-looping_graph.ipynb`
 - **Description**: Learn how to implement loops in LangGraph, allowing nodes to repeat until specific conditions are met. Perfect for iterative processes and retry mechanisms.
 - **Key Concepts**: Looping edges, iterative workflows, conditional loops, retry patterns, state persistence across iterations
 - **Prerequisites**: Conditional Graph example
 
-#### 🟡 [LLM OpenAI API](./examples/llm-openai-api/)
+#### 🟡 [LLM OpenAI API](./examples/02-llm-openai-api/)
 
 **Example 1: Basic Bot (No Memory)**
-- **File**: `basic_bot_no_memory.ipynb`
+- **File**: `01-basic_bot_no_memory.ipynb`
 - **Description**: Your first real AI agent! Learn how to integrate OpenAI's language models with LangGraph to create a conversational agent.
 - **Key Concepts**: LLM integration, OpenAI API, ChatOpenAI, message handling, environment setup, API key management
 - **Prerequisites**: LangGraph Basics examples
 
-#### 🟡 [LLM Local](./examples/llm-local/)
+#### 🟡 [LLM Local](./examples/03-llm-local/)
 
 **Example 1: Basic Bot (No Memory) - Local**
-- **File**: `basic_bot_no_memory.ipynb`
+- **File**: `01-basic_bot_no_memory.ipynb`
 - **Description**: Run AI agents locally! Learn how to integrate local language models using Ollama with LangGraph to create a conversational agent that runs on your own hardware.
 - **Key Concepts**: Local LLM integration, Ollama setup, ChatOpenAI with local endpoints, GPU utilization, cost reduction, offline AI capabilities
 - **Prerequisites**: LangGraph Basics examples, Ollama installation
 
-#### 🔴 [LLM-Based Workflows](./examples/llm-based-workflows/)
+#### 🔴 [LLM-Based Workflows](./examples/04-llm-based-workflows/)
 
 **Example 1: Invoice Processing Pipeline**
-- **File**: `invoice_processor.ipynb`
+- **File**: `01-invoice_processor.ipynb`
 - **Description**: Build a complete document processing workflow! Learn how to create an automated system that extracts data from PDF invoices using LLMs and LangGraph orchestration. This real-world example demonstrates advanced workflow patterns for business automation.
 - **Key Concepts**: PDF text extraction, LLM-based data parsing, structured data extraction, Pydantic models, batch processing, document automation, business workflow orchestration
 - **Prerequisites**: LangGraph Basics examples, OpenAI API key, PDF processing libraries
 - **Sample Data**: Includes 10 sample PDF invoices and CSV output format
 
 **Example 2: Invoice Processing with Conditional Notifications**
-- **File**: `invoice_processor_and_notification.ipynb`
+- **File**: `02-invoice_processor_and_notification.ipynb`
 - **Description**: Extend the invoice processing workflow with conditional edges! Learn how to create intelligent routing logic that handles high-value invoices differently, generating email notifications and requiring CFO approval for invoices above $200,000. This enhanced example demonstrates how LangGraph's conditional workflows can enforce business rules and automate complex decision-making.
 - **Key Concepts**: Conditional edges, conditional routing, business rule enforcement, email notification generation, high-value invoice handling, branching workflows, LLM-powered business communications
 - **Prerequisites**: Invoice Processing Pipeline example (Example 1), OpenAI API key, PDF processing libraries
 - **Sample Data**: Includes 10 sample PDF invoices, CSV output format, and notification data
 
-#### 🔴 [LLM Agents](./examples/llm-agents/)
+#### 🔴 [LLM Agents](./examples/05-llm-agents/)
 
-**Example 1: Agentic RAG for Product Support**
-- **File**: `agentic-rag-product-support.ipynb`
-- **Description**: Build a complete Retrieval-Augmented Generation (RAG) application! Learn how to create an intelligent question-answering system that processes technical documentation (Tesla vehicle manual), builds a vector database for semantic search, and uses LangGraph to orchestrate retrieval and answer generation workflows. This advanced example demonstrates how to combine document processing, embeddings, vector search, and LLM capabilities to create production-ready RAG systems.
-- **Key Concepts**: RAG architecture, vector databases (FAISS), embeddings (OpenAI), semantic search, document chunking, retrieval-augmented generation, technical documentation Q&A, vector similarity search, context preparation, multi-step agent workflows
+**Example 1: Basic RAG for Product Support**
+- **File**: `01-rag-product-support.ipynb`
+- **Description**: Build your first complete Retrieval-Augmented Generation (RAG) application! Learn how to create an intelligent question-answering system that processes technical documentation (Tesla vehicle manual), builds a vector database for semantic search, and uses LangGraph to orchestrate retrieval and answer generation workflows. This foundational example demonstrates how to combine document processing, embeddings, vector search, and LLM capabilities to create a working RAG system with sequential workflow execution.
+- **Key Concepts**: RAG architecture, vector databases (FAISS), embeddings (OpenAI), semantic search, document chunking, retrieval-augmented generation, technical documentation Q&A, vector similarity search, context preparation, sequential agent workflows, state management
 - **Prerequisites**: LangGraph Basics examples, OpenAI API key, PDF processing libraries, vector database knowledge
 - **Sample Data**: Includes Tesla vehicle manual PDF and pre-built vector database files
+
+**Example 2: Agentic RAG with Tools and Conversation Memory**
+- **File**: `02-agentic-rag-product-support.ipynb`
+- **Description**: Extend the basic RAG application with advanced agent capabilities! Learn how to model retrieval as a tool that the LLM can call on-demand, bind tools to LLMs for autonomous decision-making, and maintain conversation memory using LangChain's message-based state. This advanced example demonstrates conditional routing, tool calling, and multi-turn conversations, giving the agent more autonomy and enabling sophisticated interactions.
+- **Key Concepts**: Tool calling, tool binding with `bind_tools()`, message-based state, conversation memory, conditional routing, autonomous agent decision-making, multi-turn conversations, LangChain message types (SystemMessage, HumanMessage, AIMessage, ToolMessage), conditional edges for tool execution
+- **Prerequisites**: Basic RAG for Product Support example (Example 1), OpenAI API key, vector database files from Example 1
+- **Sample Data**: Reuses vector database files created in Example 1
 
 ---
 
@@ -195,16 +203,17 @@ For a complete list of dependencies, see [requirements.txt](./requirements.txt).
 
 We recommend following this learning path:
 
-1. **Start Here**: [LangGraph Basics - Hello World](./examples/langgraph-basics/hello_world_agent.ipynb) - Get familiar with the basics of LangGraph
-2. **Next Step**: [LangGraph Basics - Sequential Graph](./examples/langgraph-basics/sequential_graph.ipynb) - Learn about sequential workflows and state management
-3. **Advanced**: [LangGraph Basics - Conditional Graph](./examples/langgraph-basics/conditional_graph.ipynb) - Master conditional branching and decision-making logic
-4. **Loops**: [LangGraph Basics - Looping Graph](./examples/langgraph-basics/looping_graph.ipynb) - Understand iterative processes and retry mechanisms
-5. **AI Integration**: [LLM OpenAI API - Basic Bot](./examples/llm-openai-api/basic_bot_no_memory.ipynb) - Create your first AI-powered agent with OpenAI
-6. **Local AI**: [LLM Local - Basic Bot](./examples/llm-local/basic_bot_no_memory.ipynb) - Run AI agents locally with Ollama
-7. **Real-World Application**: [LLM-Based Workflows - Invoice Processing](./examples/llm-based-workflows/invoice_processor.ipynb) - Build a complete document processing pipeline
-8. **Advanced Workflows**: [LLM-Based Workflows - Conditional Notifications](./examples/llm-based-workflows/invoice_processor_and_notification.ipynb) - Master conditional routing and business rule enforcement
-9. **RAG Systems**: [LLM Agents - Agentic RAG](./examples/llm-agents/agentic-rag-product-support.ipynb) - Build intelligent question-answering systems with vector databases and semantic search
-10. **Experiment**: Modify the examples, add your own features, and build something unique!
+1. **Start Here**: [LangGraph Basics - Hello World](./examples/01-langgraph-basics/01-hello_world_agent.ipynb) - Get familiar with the basics of LangGraph
+2. **Next Step**: [LangGraph Basics - Sequential Graph](./examples/01-langgraph-basics/02-sequential_graph.ipynb) - Learn about sequential workflows and state management
+3. **Advanced**: [LangGraph Basics - Conditional Graph](./examples/01-langgraph-basics/03-conditional_graph.ipynb) - Master conditional branching and decision-making logic
+4. **Loops**: [LangGraph Basics - Looping Graph](./examples/01-langgraph-basics/04-looping_graph.ipynb) - Understand iterative processes and retry mechanisms
+5. **AI Integration**: [LLM OpenAI API - Basic Bot](./examples/02-llm-openai-api/01-basic_bot_no_memory.ipynb) - Create your first AI-powered agent with OpenAI
+6. **Local AI**: [LLM Local - Basic Bot](./examples/03-llm-local/01-basic_bot_no_memory.ipynb) - Run AI agents locally with Ollama
+7. **Real-World Application**: [LLM-Based Workflows - Invoice Processing](./examples/04-llm-based-workflows/01-invoice_processor.ipynb) - Build a complete document processing pipeline
+8. **Advanced Workflows**: [LLM-Based Workflows - Conditional Notifications](./examples/04-llm-based-workflows/02-invoice_processor_and_notification.ipynb) - Master conditional routing and business rule enforcement
+9. **RAG Systems**: [LLM Agents - Basic RAG](./examples/05-llm-agents/01-rag-product-support.ipynb) - Build your first intelligent question-answering system with vector databases and semantic search
+10. **Advanced RAG**: [LLM Agents - Agentic RAG with Tools](./examples/05-llm-agents/02-agentic-rag-product-support.ipynb) - Extend RAG with tool calling, conversation memory, and autonomous agent decision-making
+11. **Experiment**: Modify the examples, add your own features, and build something unique!
 
 ---
 
